@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Assignment 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Naif Alenizi</h1>
+        <p>Software Engineering Student</p>
+        <p id="greeting-message"></p>
+        <p id="visitor-display"></p>
+        <p id="time-on-site">Time on site: 0s</p>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-btn active" data-target="about">About</button>
+        <button class="tab-btn" data-target="projects">Projects</button>
+        <button class="tab-btn" data-target="github">GitHub</button>
+        <button class="tab-btn" data-target="contact">Contact</button>
+    </nav>
+
+    <div class="theme-button-container">
+        <button id="theme-toggle">Switch to Dark Mode</button>
+    </div>
+
+    <main>
+        <section id="about" class="tab-section active-section">
+            <h2>About Me</h2>
+
+            <img src="rat.webp" alt="Profile Image" class="profile-img">
+
+            <p>
+                I am a software engineering student interested in web development and technology.
+                I enjoy learning new skills and building practical projects to improve my experience.
+            </p>
+
+            <div class="visitor-box">
+                <h3>Personalize Your Visit</h3>
+                <label for="visitor-name">Enter your name:</label>
+                <div class="visitor-actions">
+                    <input type="text" id="visitor-name" placeholder="Your name">
+                    <button type="button" id="save-name-btn">Save Name</button>
+                </div>
+                <p id="saved-name-message" class="status-message"></p>
+            </div>
+        </section>
+
+        <section id="projects" class="tab-section">
+            <h2>Projects</h2>
+
+            <div class="projects-wrapper">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>A simple web project built using HTML and CSS.</p>
+                    <img src="https://picsum.photos/300/200?random=1" alt="Project 1">
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>A small JavaScript-based interactive webpage.</p>
+                    <img src="https://picsum.photos/300/200?random=2" alt="Project 2">
+                </div>
+            </div>
+        </section>
+
+        <section id="github" class="tab-section">
+            <h2>GitHub Repositories</h2>
+            <p>
+                This section loads my public repositories from GitHub using an external API.
+            </p>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="language-filter">Filter by language</label>
+                    <select id="language-filter">
+                        <option value="all">All</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="sort-by">Sort by</label>
+                    <select id="sort-by">
+                        <option value="updated">Last Updated</option>
+                        <option value="name">Name</option>
+                        <option value="stars">Stars</option>
+                    </select>
+                </div>
+
+                <div class="control-group button-group">
+                    <button type="button" id="refresh-repos">Refresh Repositories</button>
+                </div>
+            </div>
+
+            <p id="api-status" class="status-message">Repositories will appear here.</p>
+            <p id="empty-message" class="status-message hidden">No repositories match the selected filters.</p>
+
+            <div id="repo-list" class="repo-grid"></div>
+        </section>
+
+        <section id="contact" class="tab-section">
+            <h2>Contact Me</h2>
+
+            <form id="contact-form" novalidate>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" maxlength="200"></textarea>
+                <small id="message-count">0 / 200 characters</small>
+
+                <button type="submit">Send</button>
+            </form>
+
+            <p id="form-message" class="status-message"></p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
