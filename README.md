@@ -1,23 +1,26 @@
-# Personal Portfolio – Assignment 3
+# Personal Portfolio – Assignment 4
 
-This project is an advanced version of my personal portfolio website from Assignments 1 and 2.
+This project is the final polished version of my personal portfolio web application.
 
-The goal of this assignment is to improve the website by adding advanced functionality such as API integration, stronger JavaScript logic, state management, and better user interaction.
+It combines the work from the previous assignments into one complete and professional website that demonstrates front-end development, API integration, state management, responsive design, validation, and user interaction.
 
 ## Features
 
 - Time-based greeting message
-- Navigation buttons to switch between sections
+- Navigation tabs for switching between sections
 - Dark mode and light mode toggle
 - Theme preference saved using localStorage
 - Visitor name saving and display
 - Time on site counter
-- Contact form with stronger validation
+- Skills and technical highlights section
+- Project journey section for all assignments
 - GitHub API integration to display repositories
-- Repository filtering by language
-- Repository sorting by updated date, name, or stars
-- Loading, success, and error messages
-- Responsive layout
+- Repository search, filtering, and sorting
+- Quick statistics from GitHub data
+- Contact form with stronger validation
+- Clear loading, success, and error messages
+- Responsive and polished layout
+- Live deployment using GitHub Pages
 
 ## Technologies Used
 
@@ -29,7 +32,7 @@ The goal of this assignment is to improve the website by adding advanced functio
 
 ## Project Structure
 
-assignment-3/
+assignment-4/
 ├── README.md
 ├── index.html
 ├── css/
@@ -39,6 +42,9 @@ assignment-3/
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
+├── presentation/
+│   ├── slides.pdf
+│   └── demo-video.mp4
 
 ## How to Run Locally
 
@@ -50,31 +56,39 @@ No additional installation is required.
 
 ## AI Usage Summary
 
-AI tools were used as support for reviewing code structure, improving JavaScript logic, debugging issues, and improving the documentation.
+AI tools were used as support for improving code structure, refining JavaScript logic, reviewing the design, debugging issues, and improving the documentation.
 
 A detailed explanation is available in:
 `docs/ai-usage-report.md`
 
-## Assignment 3 Improvements
+## Assignment 4 Final Improvements
 
-Compared to Assignment 2, this version includes:
+Compared to Assignment 3, this version includes:
 
-- external API integration using GitHub API
-- stronger application logic with filtering and sorting
-- improved state management using localStorage
-- stronger form validation
-- visitor name saving
-- time-on-site counter
-- clearer user feedback messages
+- a more polished and professional layout
+- an expanded multi-section structure
+- a skills and highlights section
+- project journey cards covering all assignments
+- repository search in addition to filtering and sorting
+- GitHub statistics cards
+- clearer presentation-ready content
+- improved visual consistency and user experience
 
 ## Repository Link
 
-https://github.com/kjmoly/202154090-naifalenizi-assignment3
+https://github.com/kjmoly/202154090-naifalenizi-assignment4
 
 ## Live Demo
 
-https://kjmoly.github.io/202154090-naifalenizi-assignment3/
+https://kjmoly.github.io/202154090-naifalenizi-assignment4/
+
+## Presentation Files
+
+The final presentation materials for this assignment are included in the `presentation` folder:
+
+- `slides.pdf`
+- `demo-video.mp4`
 
 ## Notes
 
-This project was developed as part of Assignment 3 to practice advanced front-end web development concepts, API integration, and better application logic.
+This project was developed as the final step in building a complete personal web application for the course. It is intended to showcase both technical skills and professional presentation quality.
