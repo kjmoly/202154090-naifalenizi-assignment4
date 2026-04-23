@@ -3,77 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Assignment 3</title>
+    <title>Personal Portfolio - Assignment 4</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Naif Alenizi</h1>
-        <p>Software Engineering Student</p>
-        <p id="greeting-message"></p>
-        <p id="visitor-display"></p>
-        <p id="time-on-site">Time on site: 0s</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Naif Alenizi</h1>
+            <p class="subtitle">Software Engineering Student | Personal Web Application</p>
+            <p id="greeting-message"></p>
+            <p id="visitor-display"></p>
+            <p id="time-on-site">Time on site: 0s</p>
+
+            <div class="hero-actions">
+                <a class="primary-link" href="https://github.com/kjmoly/202154090-naifalenizi-assignment4" target="_blank" rel="noopener noreferrer">View Repository</a>
+                <a class="secondary-link" href="https://kjmoly.github.io/202154090-naifalenizi-assignment4/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+        </div>
     </header>
 
     <nav class="tabs">
-        <button class="tab-btn active" data-target="about">About</button>
-        <button class="tab-btn" data-target="projects">Projects</button>
-        <button class="tab-btn" data-target="github">GitHub</button>
-        <button class="tab-btn" data-target="contact">Contact</button>
+        <button type="button" class="tab-btn active" data-target="about">About</button>
+        <button type="button" class="tab-btn" data-target="skills">Skills</button>
+        <button type="button" class="tab-btn" data-target="projects">Projects</button>
+        <button type="button" class="tab-btn" data-target="github">GitHub</button>
+        <button type="button" class="tab-btn" data-target="contact">Contact</button>
     </nav>
 
     <div class="theme-button-container">
-        <button id="theme-toggle">Switch to Dark Mode</button>
+        <button type="button" id="theme-toggle">Switch to Dark Mode</button>
     </div>
 
     <main>
         <section id="about" class="tab-section active-section">
-            <h2>About Me</h2>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>A polished portfolio that combines front-end development, API integration, state management, and user interaction.</p>
+            </div>
 
-            <img src="rat.webp" alt="Profile Image" class="profile-img">
+            <div class="about-layout">
+                <div class="about-card">
+                    <img src="rat.webp" alt="Profile Image" class="profile-img">
 
-            <p>
-                I am a software engineering student interested in web development and technology.
-                I enjoy learning new skills and building practical projects to improve my experience.
-            </p>
+                    <div class="about-text">
+                        <p>
+                            I am a software engineering student interested in web development and practical problem-solving.
+                            This final project brings together everything I built across the previous assignments into one complete personal web application.
+                        </p>
 
-            <div class="visitor-box">
-                <h3>Personalize Your Visit</h3>
-                <label for="visitor-name">Enter your name:</label>
-                <div class="visitor-actions">
-                    <input type="text" id="visitor-name" placeholder="Your name">
-                    <button type="button" id="save-name-btn">Save Name</button>
+                        <p>
+                            The website focuses on clean design, responsive layout, state management, API integration, stronger validation, and a more professional user experience.
+                        </p>
+                    </div>
                 </div>
-                <p id="saved-name-message" class="status-message"></p>
+
+                <div class="visitor-box">
+                    <h3>Personalize Your Visit</h3>
+                    <label for="visitor-name">Enter your name:</label>
+
+                    <div class="visitor-actions">
+                        <input type="text" id="visitor-name" placeholder="Your name">
+                        <button type="button" id="save-name-btn">Save Name</button>
+                    </div>
+
+                    <p id="saved-name-message" class="status-message"></p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3 id="stat-total-repos">0</h3>
+                    <p>Public Repositories</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3 id="stat-total-languages">0</h3>
+                    <p>Languages Used</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3 id="stat-total-stars">0</h3>
+                    <p>Total GitHub Stars</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>4</h3>
+                    <p>Assignments Completed</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="tab-section">
+            <div class="section-header">
+                <h2>Skills & Technical Highlights</h2>
+                <p>A summary of the skills and concepts used to build this final application.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="info-card">
+                    <h3>Front-End Development</h3>
+                    <div class="chip-group">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Responsive Design</span>
+                    </div>
+                    <p>
+                        I used semantic HTML, custom CSS, and JavaScript to build a clean, responsive, and user-friendly interface.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Programming Concepts</h3>
+                    <div class="chip-group">
+                        <span class="chip">API Integration</span>
+                        <span class="chip">State Management</span>
+                        <span class="chip">Filtering</span>
+                        <span class="chip">Sorting</span>
+                        <span class="chip">Validation</span>
+                    </div>
+                    <p>
+                        The project includes dynamic API loading, saved user preferences, search, filtering, sorting, and multi-step form validation.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Tools & Deployment</h3>
+                    <div class="chip-group">
+                        <span class="chip">GitHub</span>
+                        <span class="chip">GitHub Pages</span>
+                        <span class="chip">Documentation</span>
+                        <span class="chip">Presentation Ready</span>
+                    </div>
+                    <p>
+                        The application is organized for deployment, testing, documentation, and final presentation as a complete project.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Creative Touch</h3>
+                    <p>
+                        To make the project feel more complete and personal, I added a visitor name feature, quick statistics, a search bar for repositories, and a more polished multi-section interface.
+                    </p>
+                </article>
             </div>
         </section>
 
         <section id="projects" class="tab-section">
-            <h2>Projects</h2>
+            <div class="section-header">
+                <h2>Project Journey</h2>
+                <p>This section summarizes the progress made across all assignments in the course.</p>
+            </div>
 
             <div class="projects-wrapper">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A simple web project built using HTML and CSS.</p>
-                    <img src="https://picsum.photos/300/200?random=1" alt="Project 1">
-                </div>
+                <article class="project-card">
+                    <h3>Assignment 1</h3>
+                    <p>The first version of my portfolio website with a simple layout, projects section, and contact form.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Basic Layout</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kjmoly/202154090-naifalenizi-assignment1" target="_blank" rel="noopener noreferrer">Repository</a>
+                        <a href="https://kjmoly.github.io/202154090-naifalenizi-assignment1/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </article>
 
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>A small JavaScript-based interactive webpage.</p>
-                    <img src="https://picsum.photos/300/200?random=2" alt="Project 2">
-                </div>
+                <article class="project-card">
+                    <h3>Assignment 2</h3>
+                    <p>The portfolio became interactive by adding tabs, dark mode, localStorage, and user feedback in the form.</p>
+                    <div class="project-tags">
+                        <span>Interactivity</span>
+                        <span>Theme Toggle</span>
+                        <span>Form Feedback</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kjmoly/202154090-naifalenizi-assignment2" target="_blank" rel="noopener noreferrer">Repository</a>
+                        <a href="https://kjmoly.github.io/202154090-naifalenizi-assignment2/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Assignment 3</h3>
+                    <p>This version introduced advanced functionality such as API integration, stronger logic, filtering, sorting, and state management.</p>
+                    <div class="project-tags">
+                        <span>API</span>
+                        <span>Filtering</span>
+                        <span>Sorting</span>
+                        <span>Validation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kjmoly/202154090-naifalenizi-assignment3" target="_blank" rel="noopener noreferrer">Repository</a>
+                        <a href="https://kjmoly.github.io/202154090-naifalenizi-assignment3/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card featured-card">
+                    <h3>Assignment 4 - Final Application</h3>
+                    <p>This is the final polished version of the portfolio that brings together design, deployment, API integration, usability, innovation, and presentation readiness.</p>
+                    <div class="project-tags">
+                        <span>Final Project</span>
+                        <span>Professional UI</span>
+                        <span>Innovation</span>
+                        <span>Presentation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/kjmoly/202154090-naifalenizi-assignment4" target="_blank" rel="noopener noreferrer">Repository</a>
+                        <a href="https://kjmoly.github.io/202154090-naifalenizi-assignment4/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section id="github" class="tab-section">
-            <h2>GitHub Repositories</h2>
-            <p>
-                This section loads my public repositories from GitHub using an external API.
-            </p>
+            <div class="section-header">
+                <h2>GitHub Repositories</h2>
+                <p>This section loads my public repositories from GitHub using an external API.</p>
+            </div>
 
             <div class="controls">
+                <div class="control-group">
+                    <label for="repo-search">Search repositories</label>
+                    <input type="text" id="repo-search" placeholder="Search by repository name or description">
+                </div>
+
                 <div class="control-group">
                     <label for="language-filter">Filter by language</label>
                     <select id="language-filter">
@@ -102,25 +257,55 @@
         </section>
 
         <section id="contact" class="tab-section">
-            <h2>Contact Me</h2>
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <p>This section includes stronger validation, clear feedback, and quick access to my live project links.</p>
+            </div>
 
-            <form id="contact-form" novalidate>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+            <div class="contact-grid">
+                <div class="contact-form-card">
+                    <form id="contact-form" novalidate>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" maxlength="200"></textarea>
-                <small id="message-count">0 / 200 characters</small>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" maxlength="200"></textarea>
+                        <small id="message-count">0 / 200 characters</small>
 
-                <button type="submit">Send</button>
-            </form>
+                        <button type="submit">Send</button>
+                    </form>
 
-            <p id="form-message" class="status-message"></p>
+                    <p id="form-message" class="status-message"></p>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>Quick Links</h3>
+                    <ul class="link-list">
+                        <li>
+                            <a href="https://github.com/kjmoly/202154090-naifalenizi-assignment4" target="_blank" rel="noopener noreferrer">Assignment 4 Repository</a>
+                        </li>
+                        <li>
+                            <a href="https://kjmoly.github.io/202154090-naifalenizi-assignment4/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kjmoly" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+                        </li>
+                    </ul>
+
+                    <p class="contact-note">
+                        Thank you for visiting my portfolio. This final version was designed to combine functionality, presentation quality, and a smoother user experience.
+                    </p>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Naif Alenizi. Final Personal Web Application.</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
